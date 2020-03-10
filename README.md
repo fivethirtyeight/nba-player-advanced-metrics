@@ -1,4 +1,4 @@
-# NBA-data-historical
+# nba-player-advanced-metrics
 Historical RAPTOR and other NBA data.
 
 
