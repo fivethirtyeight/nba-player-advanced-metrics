@@ -1,47 +1,51 @@
 # nba-player-advanced-metrics
 Historical RAPTOR and other NBA data.
 
+(Note: Before the 2020-21 season, we added playoff stats in addition to the regular season; some output values from 2019-20 and/or in the playoffs are not available all seasons.)
 
-|  Category   |                    Description                    |
-|-------------|---------------------------------------------------|
-| player_id   | Basketball-Reference player ID                    |
-| name_common | Player name                                       |
-| year_id     | Season                                            |
-| age         | Age as of Feb. 1                                  |
-| pos         | Position                                          |
-| team_id     | Team ID                                           |
-| tmRtg       | Team net rating                                   |
-| franch_id   | Franchise ID                                      |
-| G           | Games                                             |
-| Min         | Minutes                                           |
-| MP%         | % of available team minutes played                |
-| MPG         | Minutes per game                                  |
-| P/36        | Points per 36 min (pace adj)                      |
-| TS%         | True Shooting %                                   |
-| A/36        | Assists per 36 min (pace adj)                     |
-| R/36        | Rebounds per 36 min (pace adj)                    |
-| SB/36       | Steals + Blocks per 36 min (pace adj)             |
-| TO/36       | Turnovers per 36 min (pace adj)                   |
-| Raptor O    | Offensive RAPTOR                                  |
-| Raptor D    | Defensive RAPTOR                                  |
-| Raptor+/-   | Overall RAPTOR                                    |
-| Raptor WAR  | RAPTOR Wins Above Replacement                     |
-| PIE%        | Player Impact Estimate                            |
-| AWS%        | PIE%, but using Alternate Win Score as the metric |
-| USG%        | Usage Rate                                        |
-| AST%        | Assist Rate                                       |
-| TOV%        | Turnover Rate                                     |
-| ORB%        | Offensive Rebounding Rate                         |
-| DRB%        | Defensive Rebounding Rate                         |
-| TRB%        | Total Rebounding Rate                             |
-| STL%        | Steal percentage                                  |
-| BLK%        | Block rate                                        |
-| ORtg        | Individual Pts created/100 possessions            |
-| %Pos        | Share of team possessions used on court           |
-| DRtg        | Individual Pts allowed/100 possessions            |
-| 2P%         | 2-point FG%                                       |
-| 3P%         | 3-point FG%                                       |
-| FT%         | Free throw %                                      |
-| 3PAr        | 3PA/FGA                                           |
-| FTAr        | FTA/FGA                                           |
+
+|  Category   |                     Description                     |
+|-------------|-----------------------------------------------------|
+| player_id   | Basketball-Reference.com player ID                  |
+| name_common | Name of player                                      |
+| year_id     | Season (i.e., 2019-20 is "2000")                    |
+| type        | Regular season (RS) or playoffs (PO)                |
+| age         | Age on Feb. 1 of season                             |
+| team_id     | Team played for                                     |
+| pos         | Primary position                                    |
+| tmRtg       | Team efficiency margin                              |
+| franch_id   | Franchise played for                                |
+| G           | Games played                                        |
+| Min         | Minutes played                                      |
+| MP%         | Share of team minutes played                        |
+| MPG         | Minutes per game                                    |
+| P/36        | Pace-adjusted points per 36 minutes                 |
+| TS%         | True Shooting Percentage                            |
+| A/36        | Pace-adjusted assists per 36 minutes                |
+| R/36        | Pace-adjusted rebounds per 36 minutes               |
+| SB/36       | Pace-adjusted steals plus blocks per 36 minutes     |
+| TO/36       | Pace-adjusted turnovers per 36 minutes              |
+| Raptor O    | Offensive RAPTOR rating                             |
+| Raptor D    | Defensive RAPTOR rating                             |
+| Raptor+/-   | Total RAPTOR rating                                 |
+| Raptor WAR  | Total RAPTOR wins above replacement                 |
+| PIE%        | Player Impact Estimate                              |
+| AWS%        | PIE% using Alternate Win Score                      |
+| USG%        | Usage Rate                                          |
+| AST%        | Assist Rate                                         |
+| TOV%        | Turnover Rate                                       |
+| ORB%        | Offensive Rebound Rate                              |
+| DRB%        | Defensive Rebound Rate                              |
+| TRB%        | Total Rebound Rate                                  |
+| STL%        | Steal Rate                                          |
+| BLK%        | Block Rate                                          |
+| ORtg        | Offensive Rating (points produced per 100 poss.)    |
+| %Pos        | Share of team possessions used                      |
+| DRtg        | Defensive Rating (points allowed per 100 poss.)     |
+| 2P%         | 2-point field goal percentage                       |
+| 3P%         | 3-point field goal percentage                       |
+| FT%         | Free throw percentage                               |
+| 3PAr        | Share of field goal attempts that were 3-pointers   |
+| FTAr        | Ratio of free throw attempts to field goal attempts |
+| Pace +/-    | Player's effect on team pace                        |
 
