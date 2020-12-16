@@ -1,8 +1,8 @@
 # nba-player-advanced-metrics
-Historical RAPTOR and other NBA data.
 
-(Note: Before the 2020-21 season, we added playoff stats in addition to the regular season; some output values from 2019-20 and/or in the playoffs are not available all seasons.)
+`nba-data-historical.csv` contains historical RAPTOR and other NBA data.
 
+The following columns are not included for the 2019-20 season or later: `tmRtg`, `MP%`, `P/36`, `A/36`, `R/36`,	`SB/36`, `TO/36`, `PIE%`, `AWS%`, `ORtg`, `%Pos`, `DRtg`, `2P%`,	`3P%`, and `FT%`. These values are also not included for playoffs in any year.
 
 |  Category   |                     Description                     |
 |-------------|-----------------------------------------------------|
